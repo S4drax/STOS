@@ -31,7 +31,8 @@ The 'documents' this app shows is based on reading and saving to JSON files.
 
 ### a) directory.json:
 
-```[ //table of folders
+```
+[ //table of folders
   {
     "folder": {      //folder
       "fname": "",   //folder name
@@ -107,7 +108,8 @@ Audio files, here addHeader has to be the name of a file you want to play with t
 
 ### b) users.json
 
-```[
+```
+[
     {
         "user": {
             "login": "", //login
