@@ -14,16 +14,26 @@ The app was developed for LARPs so that anyone could setup their terminal
 ### a) Commands
 
 -help/HELP - Shows in-app help containing commands
+
 -stos/STOS - Shows an ASCII logo
+
 -clear/CLEAR - Clears the main screen.
+
 -back/BACK - Brings you back to main menu.
+
 -add/Add (-m/-r/-s) - Opens a saveable document (-m medical, -r report, -s schematic)
+
 -save/Save FOLDER_NAME FILE_NAME (ACCESS_LEVEL) - Saves the currently viewed saveable document.
+
 -exit/EXIT - Closes the app.
 
+
 ### b) Shortcuts
+
 -ctrl+alt+h while in Login screen -> opens hacking
+
 -ctrl+alt+l while in Main menu screen (or any subfolder) -> logs you out
+
 
 ## 3) JSON explanation
 
