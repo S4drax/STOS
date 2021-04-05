@@ -114,7 +114,7 @@ Audio files, here addHeader has to be the name of a file you want to play with t
         "user": {
             "login": "", //login
             "password": "", //password
-			"access" : ""  //user access level
+	    "access" : ""  //user access level
         }
     }
 ]
