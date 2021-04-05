@@ -22,7 +22,7 @@ public class HackingLogic {
 
     public void initHakcing(List<Label> hackLabels, String password, String lang, List<String> chosenDuds){
         int randomNum = ThreadLocalRandom.current().nextInt(256, 3595);
-        List<String> baseDict = loadDictionary(password.length());
+        List<String> baseDict = loadDictionary(password.length(), lang);
         password=password.toUpperCase();
         List<String> duds = getMatching(password,baseDict);
         String startHex = "0xF"+Integer.toHexString(randomNum).toUpperCase();
@@ -236,11 +236,11 @@ public class HackingLogic {
         return duds;
     }
 
-    private List<String> loadDictionary(int passwordLength){
+    private List<String> loadDictionary(int passwordLength, String language){
         List<String> dict = new ArrayList<>();
         String tmpLine ="";
         try {
-            String dictFileName = "dict\\en\\"+passwordLength+".txt";
+            String dictFileName = "dict\\"+language+"\\"+passwordLength+".txt";
             bufferedReader =  new BufferedReader(new InputStreamReader(new FileInputStream(dictFileName),"UTF8"));
             tmpLine=bufferedReader.readLine();
             while(tmpLine!= null) {
