@@ -55,52 +55,52 @@ The 'documents' this app shows is based on reading and saving to JSON files.
 ] 
 ```
 
-Styles
+#### Styles
 
 
--"doc_compact"
+##### -"doc_compact"
 
 Standard document, compacted so that you can maximise the ammount of text on screen.
 
 addHeader example: "just plain text"
 
 
--"doc_spread"
+##### -"doc_spread"
 
 Standard document, every second line is empty for design/readability purposes.
 
 addHeader example: "just plain text"
 
 
--"med_chart"
+##### -"med_chart"
 
 Medical chart
 
 addHeader example: "NAME%DATE%GENDER%STATUS%CARETAKER%CAUSE_OF_VISIT%THREATMENT[with commas spliting the steps]"
 
 
--"status_report_c"
+##### -"status_report_c"
 
 Status Report, main text is compacted.
 
 addHeader example: "NAME%DATE%MAIN_TEXT"
 
 
--"status_report_s"
+##### -"status_report_s"
 
 Status Report, main text has every second line empty.
 
 addHeader example: "NAME%DATE%MAIN_TEXT"
 
 
--"schematic"
+##### -"schematic"
 
 Schematic, for either some in-game mechanic schematics or fluff text.
 
 addHeader example: "NAME%TIME_IT_TAKES%MATERIALS_LIST[commas split]%RESULTS%LORE_TEXT"
 
 
--"audio"
+##### -"audio"
 
 Audio files, here addHeader has to be the name of a file you want to play with the file extension (i only checked it with .wav files).
 
