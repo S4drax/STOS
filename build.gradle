@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+group 'STOS'
+version '1.0.0-RELEASE'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation "org.hexworks.zircon:zircon.core-jvm:2020.0.2-PREVIEW"
+    implementation "org.hexworks.zircon:zircon.jvm.swing:2020.0.2-PREVIEW"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    //implementation("org.hexworks.zircon:zircon.core-jvm:2020.2.0-RELEASE")
+    //implementation("org.hexworks.zircon:zircon.jvm.swing:2020.2.0-RELEASE")
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    compile group: 'org.postgresql', name: 'postgresql', version: '9.3-1100-jdbc4'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.1'
+
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'Main'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
