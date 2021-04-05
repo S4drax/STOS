@@ -51,7 +51,8 @@ The 'documents' this app shows is based on reading and saving to JSON files.
       ]
     }
   }
-]```
+] 
+```
 
 Styles
 
@@ -114,7 +115,8 @@ Audio files, here addHeader has to be the name of a file you want to play with t
 			"access" : ""  //user access level
         }
     }
-]```
+]
+```
 
 ## 4) Used Libraries
 
