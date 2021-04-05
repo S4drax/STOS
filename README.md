@@ -29,7 +29,7 @@ The app was developed for LARPs so that anyone could setup their terminal
 
 The 'documents' this app shows is based on reading and saving to JSON files.
 
-### a) directory.json:
+#### a) directory.json:
 
 ```
 [ //table of folders
@@ -106,7 +106,7 @@ Audio files, here addHeader has to be the name of a file you want to play with t
 
 
 
-### b) users.json
+#### b) users.json
 
 ```
 [
