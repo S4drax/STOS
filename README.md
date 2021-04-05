@@ -1,17 +1,17 @@
 # STOS
 Sadrax Terminal Operating System application
 
-##1) Introduction
+## 1) Introduction
 
 Welcome to STOS, or Sadrax Terminal Operating System.
 
-##2) General
+## 2) General
 
 The app was developed for LARPs so that anyone could setup their terminal
 
-##3) Commands and Shortcuts
+## 3) Commands and Shortcuts
 
-###a) Commands
+### a) Commands
 
 -help/HELP - Shows in-app help containing commands
 -stos/STOS - Shows an ASCII logo
@@ -21,15 +21,15 @@ The app was developed for LARPs so that anyone could setup their terminal
 -save/Save FOLDER_NAME FILE_NAME (ACCESS_LEVEL) - Saves the currently viewed saveable document.
 -exit/EXIT - Closes the app.
 
-###b) Shortcuts
+### b) Shortcuts
 -ctrl+alt+h while in Login screen -> opens hacking
 -ctrl+alt+l while in Main menu screen (or any subfolder) -> logs you out
 
-##3) JSON explanation
+## 3) JSON explanation
 
 The 'documents' this app shows is based on reading and saving to JSON files.
 
-###a) directory.json:
+### a) directory.json:
 
 ```[ //table of folders
   {
@@ -104,7 +104,7 @@ Audio files, here addHeader has to be the name of a file you want to play with t
 
 
 
-###b) users.json
+### b) users.json
 
 ```[
     {
@@ -116,13 +116,13 @@ Audio files, here addHeader has to be the name of a file you want to play with t
     }
 ]```
 
-##4) Used Libraries
+## 4) Used Libraries
 
 Zircon: A great library with a purpose to easily make ASCII Roguelike games, here i used it for most of 'visuals'.
 
 https://github.com/Hexworks/zircon
 
 
-##5) Contact info:
+## 5) Contact info:
 
 Either drop comments on here or contact me via discord at Sadrax#1839
