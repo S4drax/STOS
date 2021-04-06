@@ -3,12 +3,15 @@ plugins {
 }
 
 group 'STOS'
-version '1.0.0-RELEASE'
+version '1.0.1-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven {
+        url "https://dl.bintray.com/kotlin/kotlinx/"
+    }
 }
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
