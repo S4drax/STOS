@@ -1,0 +1,1 @@
+java -jar STOS-1.0.0-RELEASE.jar 

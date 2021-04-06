@@ -38,6 +38,15 @@ public class LabelProperties {
     String recresult="";
     String recdescr="";
     String audiolength ="";
+    String help1 ="";
+    String help2 ="";
+    String help3 ="";
+    String help4 ="";
+    String help5 ="";
+    String help6 ="";
+    String help7 ="";
+    String help8 ="";
+    String help9 ="";
     InputStream inputStream;
     BufferedReader bufferedReader;
     private static TranslatorService translatorService = new TranslatorService();
@@ -73,6 +82,15 @@ public class LabelProperties {
             recresult = translatorService.translateToTile(prop.getProperty("recresult"));
             recdescr = translatorService.translateToTile(prop.getProperty("recdescr"));
             audiolength = translatorService.translateToTile(prop.getProperty("audiolength"));
+            help1 = translatorService.translateToTile(prop.getProperty("help1"));
+            help2 = translatorService.translateToTile(prop.getProperty("help2"));
+            help3 = translatorService.translateToTile(prop.getProperty("help3"));
+            help4 = translatorService.translateToTile(prop.getProperty("help4"));
+            help5 = translatorService.translateToTile(prop.getProperty("help5"));
+            help6 = translatorService.translateToTile(prop.getProperty("help6"));
+            help7 = translatorService.translateToTile(prop.getProperty("help7"));
+            help8 = translatorService.translateToTile(prop.getProperty("help8"));
+            help9 = translatorService.translateToTile(prop.getProperty("help9"));
         } catch (Exception e) {
             System.out.println("Exception: " + e);
         }

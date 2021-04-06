@@ -65,7 +65,7 @@ public class CommandHandler {
                     }
                     if (term.getText().equalsIgnoreCase("help")) {
                         mainText.clear();
-                        mainText.addFragment(new Help(Size.create(94, 44)));
+                        mainText.addFragment(new Help(Size.create(94, 44),labelProperties));
                     }
                     if (term.getText().equalsIgnoreCase("clear")) {
                         mainText.clear();

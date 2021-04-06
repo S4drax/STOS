@@ -301,11 +301,10 @@ public class DynamicComponentService {
         return report;
     }
 
-
     public VBox schematic(String text, LabelProperties labelProperties){
         String tmp;
         VBox schematic = vbox().withSize(94, 44).build();
-        //line 1: Name and Admission date
+        //line 1: Name and Time
         HBox line1 = hbox().withSize(94,3).build();
         //name
         TextBoxBuilder textBoxName = Components.textBox(45).withDecorations(box(BoxType.SINGLE));

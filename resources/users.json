@@ -1,0 +1,16 @@
+[
+    {
+        "user": {
+            "login": "guest",
+            "password": "guest",
+			"access" : "5"
+        }
+    },
+    {
+        "user": {
+            "login": "admin",
+            "password": "paula",
+			"access": "1"
+    }
+  }
+]

@@ -1,5 +1,6 @@
 package content;
 
+import config.LabelProperties;
 import org.hexworks.zircon.api.Components;
 import org.hexworks.zircon.api.component.*;
 import org.hexworks.zircon.api.data.Size;
@@ -12,19 +13,20 @@ public class Help implements Fragment {
     private VBox root;
 
 
-    public Help(Size size) {
+    public Help(Size size, LabelProperties lp) {
         root = vbox()
                 .withSize(size)
                 .build();
         TextBox textBox = Components.textBox(size.getWidth()-2)
-                .addHeader("Witaj w systemie STOS, zaprojektowanego do łatwej obsługi terminali.")
-                .addHeader("Aktualnie dostępne komendy:")
-                .addHeader("help/HELP - przywołuje tą informację")
-                .addHeader("stos/STOS - przywołuje zacne logo 3d")
-                .addHeader("clear/CLEAR - czyści ekran")
-                .addHeader("back/BACK - wraca do głównego menu")
-                .addHeader("add/Add (-m/-r/-s) - otwiera pole zapisu nowego dokumentu")
-                .addHeader("exit/EXIT - wychodzi z aplikacji")
+                .addHeader(lp.getHelp1())
+                .addHeader(lp.getHelp2())
+                .addHeader(lp.getHelp3())
+                .addHeader(lp.getHelp4())
+                .addHeader(lp.getHelp5())
+                .addHeader(lp.getHelp6())
+                .addHeader(lp.getHelp7())
+                .addHeader(lp.getHelp8())
+                .addHeader(lp.getHelp9())
                 .build();
         root.addComponent(textBox);
     }

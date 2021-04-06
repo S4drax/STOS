@@ -1,0 +1,138 @@
+[
+  {
+    "folder": {
+      "fname": "reports",
+      "fragments": [
+        {
+          "fragment": {
+            "textBox": {
+              "positionY": 0,
+              "addHeader": "CHARACTER_NAME%11.07.2121%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra congue enim a dictum. Nam metus neque, dapibus vitae nisl ac, efficitur tempor purus. Nulla malesuada nunc et neque cursus, vitae sagittis arcu egestas. Aenean rutrum odio justo, vitae hendrerit ligula blandit vitae. Duis at bibendum ante, aliquam tempus tortor. zażółć gęślą jaźń",
+              "level": 5,
+              "style": "status_report_c",
+              "positionX": 0
+            },
+            "name": "CHARACTER_NAME_11.07.2121_Compact"
+          }
+        },
+        {
+          "fragment": {
+            "textBox": {
+              "positionY": 0,
+              "addHeader": "CHARACTER_NAME%11.07.2121%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra congue enim a dictum. Nam metus neque, dapibus vitae nisl ac, efficitur tempor purus. Nulla malesuada nunc et neque cursus, vitae sagittis arcu egestas. Aenean rutrum odio justo, vitae hendrerit ligula blandit vitae. Duis at bibendum ante, aliquam tempus tortor. zażółć gęślą jaźń",
+              "level": 5,
+              "style": "status_report_s",
+              "positionX": 0
+            },
+            "name": "CHARACTER_NAME_11.07.2121_Spread"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "folder": {
+      "fname": "medical",
+      "fragments": [
+        {
+          "fragment": {
+            "textBox": {
+              "positionY": 0,
+              "addHeader": "Johnn Doe%12.07.2121%Male%Cured%Dr. Naukow%Severe blunt force trauma combined with ruptured kidney.%Replace destroyed kidney with special aparatus, 30cc of coffee tincture, 20 push ups",
+              "level": 3,
+              "style": "med_chart",
+              "positionX": 0
+            },
+            "name": "John"
+          }
+        },
+        {
+          "fragment": {
+            "textBox": {
+              "positionY": 0,
+              "addHeader": "Meffcio%dzis%Male%chory w chuj%Sandacz%Zatwardzenie%Lewatywa, prawatywa, srodatywa",
+              "level": 1,
+              "style": "med_chart",
+              "positionX": 0
+            },
+            "name": "meff"
+          }
+        },
+        {
+          "fragment": {
+            "textBox": {
+              "positionY": 0,
+              "addHeader": "123%345%456%567%77878%7887%12,123,,555",
+              "level": 5,
+              "style": "med_chart",
+              "positionX": 0
+            },
+            "name": "123"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "folder": {
+      "fname": "Helios one",
+      "fragments": [
+        {
+          "fragment": {
+            "textBox": {
+              "positionY": 0,
+              "addHeader": "Established before the Great War as a next-generation solar power plant, hailed as the Dawn of a Golden Age, HELIOS One was more than just a renewable source of energy. It doubled as a research and development facility for the U.S. Army\u0027s top-secret orbital energy cannon, Archimedes II. Having joined the \u0027Poseidon Family\u0027 when they began work, employees of HELIOS One were expected to keep company projects a secret, as carelessly discussing developments could pose a threat to national security if the communists got wind of Poseidon projects. The military side of affairs was handled by Brigadier General Scott Lowe, who oversaw the testing of the weapon on site. Tests of the orbital weapon proved to be less than successful, as while both the orbital cannon (Archimedes II) and the array of smaller lasers dedicated to facility defense (Archimedes I) were successful, they resulted in a 2.5-minute downtime at the facility and system-frying power fluctuations in nearby installations, including Hidden Valley and Black Mountain. Further development was precluded by the destruction brought by the Great War.",
+              "level": 5,
+              "style": "doc_spread",
+              "positionX": 0
+            },
+            "name": "Before the War"
+          }
+        },
+        {
+          "fragment": {
+            "textBox": {
+              "positionY": 0,
+              "addHeader": "After centuries of disuse, the Brotherhood of Steel discovered the facility. The occupation of HELIOS One was a decision made by Elder Elijah who intended to unlock the secrets of the power plant. The Mojave chapter operated freely amid the Vegas wastes for several years, carrying out many reclamation missions without serious opposition. In 2274, the NCR officially set up a base at McCarran International Airport. From there, the NCR set its sights on the HELIOS One solar plant. Elijah, still believing that the plant contained an unprecedented military advantage, refused to leave the plant, and forced the paladins to continue defending it. Two years of guerilla fighting against the NCR followed, culminating in Operation: Sunburst in 2276. The NCR launched the operation to capture HELIOS One. Outnumbered by NCR soldiers, a pitched battle took place. Despite the Brotherhood being in control of far superior equipment, such as energy weapons and power armor, the Brotherhood had no reinforcements and were gradually worn down by NCR\u0027s attacks. By the time the retreat signal was given by Paladin McNamara, more than half the chapter lay dead in the dust. The chapter\u0027s leader, Elder Elijah, disappeared without a trace. Brotherhood survivors retreated to Hidden Valley, while the NCR regrouped at the newly occupied HELIOS. When they finally set out to locate and destroy remaining Brotherhood forces, they were nowhere to be found.",
+              "level": 5,
+              "style": "doc_compact",
+              "positionX": 0
+            },
+            "name": "Operation: Sunburst"
+          }
+        },
+        {
+          "fragment": {
+            "textBox": {
+              "positionY": 0,
+              "addHeader": "As NCR soldiers explored the interior of the plant, they discovered that the Brotherhood had left them with one last nasty and spiteful goodbye in the solar collection tower before departing. The building\u0027s automated defense system had been activated, and the halls and corridors were now crawling with active and heavy-armed security robots and turrets, meaning that the getting at the innards of the building was extremely dangerous. Not being willing to divert manpower and resources towards such a hazardous undertaking, and with no way of remotely shutting down the security system, the NCR command ordered the tower to be on lock-down, and had it secured in a way that required permission from two separate security terminals before it could be entered. The NCR established a firm foothold in HELIOS One and its vicinity, although due to a stroke of bad luck, an incompetent con artist was hired to act as the facility\u0027s principal engineer. He was unable to bring the facility to even moderate operational status, leaving it stuck at 1% efficiency. Ignacio Rivas was posted by the Followers of the Apocalypse to research the facility independently and ensure that the ignoramus hired by the NCR would not figure out a way to unlock the facility\u0027s violent capabilities.",
+              "level": 5,
+              "style": "doc_spread",
+              "positionX": 0
+            },
+            "name": "Under NCR control"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "folder": {
+      "fname": "audio logs",
+      "fragments": [
+        {
+          "fragment": {
+            "textBox": {
+              "positionY": 0,
+              "addHeader": "correct.wav",
+              "level": 5,
+              "style": "audio",
+              "positionX": 0
+            },
+            "name": "correct.wav"
+          }
+        }
+      ]
+    }
+  }
+]
