@@ -1,5 +1,6 @@
 # STOS
-Sadrax Terminal Operating System application
+
+Sadrax Terminal Operating System application, mouse is optional (as in: most stuff is made via command prompts, only use mouse if somewhere somehow focus is lost on command line).
 
 ## 1) Introduction
 
