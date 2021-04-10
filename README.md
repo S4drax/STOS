@@ -1,10 +1,11 @@
 # STOS
 
-Sadrax Terminal Operating System application, mouse is optional (as in: most stuff is made via command prompts, only use mouse if somewhere somehow focus is lost on command line).
+Sadrax Terminal Operating System application
 
 ## 1) Introduction
 
 Welcome to STOS, or Sadrax Terminal Operating System.
+Mouse use is optional (as in: most stuff is made via command prompts, only use mouse if somewhere somehow focus is lost on command line).
 
 ## 2) General
 
