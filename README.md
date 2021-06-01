@@ -1,13 +1,23 @@
 # STOS
+
 Sadrax Terminal Operating System application
 
 ## 1) Introduction
 
 Welcome to STOS, or Sadrax Terminal Operating System.
+Mouse use is optional (as in: most stuff is made via command prompts, only use mouse if somewhere somehow focus is lost on command line).
 
 ## 2) General
 
-The app was developed for LARPs so that anyone could setup their terminal
+The app was developed for LARPs so that anyone could setup their terminal. 
+
+This is a java application so before running remember to have JAVA installed (for now 1.8).
+
+Also the app was designed with 1920x1080 resolution in mind, tho i am going to add different resolution options along the way.
+
+Roadmap on Trello:
+
+https://trello.com/b/PiKPOvlv/stos
 
 ## 3) Commands and Shortcuts
 
