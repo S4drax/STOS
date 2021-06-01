@@ -47,6 +47,7 @@ public class LabelProperties {
     String help7 ="";
     String help8 ="";
     String help9 ="";
+    String caps = "";
     InputStream inputStream;
     BufferedReader bufferedReader;
     private static TranslatorService translatorService = new TranslatorService();
@@ -54,7 +55,7 @@ public class LabelProperties {
     public void loadProperties(String language){
         try {
             Properties prop = new Properties();
-            String propFileName = "dict\\"+language+"\\labels.properties";
+            String propFileName = "dict/"+language+"/labels.properties";
             bufferedReader =  new BufferedReader(new InputStreamReader(new FileInputStream(propFileName),"UTF8"));
             prop.load(bufferedReader);
             //TUTAJ PRZYPISYWAC PROPERTASY
@@ -91,6 +92,7 @@ public class LabelProperties {
             help7 = translatorService.translateToTile(prop.getProperty("help7"));
             help8 = translatorService.translateToTile(prop.getProperty("help8"));
             help9 = translatorService.translateToTile(prop.getProperty("help9"));
+            caps = translatorService.translateToTile(prop.getProperty("caps"));
         } catch (Exception e) {
             System.out.println("Exception: " + e);
         }

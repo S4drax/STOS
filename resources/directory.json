@@ -75,6 +75,25 @@
   },
   {
     "folder": {
+      "fname": "menu_test",
+      "fragments": [
+        {
+          "fragment": {
+            "textBox": {
+              "level": "5",
+              "positionY": 0,
+              "addHeader": "Kawa%2%Herbata%2%Wata Cukrowa Zwykłą%3%Wata Cukrowa Smakowa%4%",
+              "style": "menu",
+              "positionX": 0
+            },
+            "name": "menu"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "folder": {
       "fname": "Helios one",
       "fragments": [
         {

@@ -4,6 +4,7 @@ import config.LabelProperties;
 import content.DynamicBox;
 import content.Folder;
 import content.MenuElement;
+import content.MenuTemplateEntry;
 import org.hexworks.zircon.api.Components;
 
 import java.io.*;
@@ -103,6 +104,9 @@ public class DynamicComponentService {
                 break;
             case "audio":
                 dynamicBoxList.add(audio(text, fragmentObject.get("name").toString(), folderName, menu, labelProperties, al));
+                break;
+            case "menu":
+                dynamicBoxList.add(new DynamicBox(Size.create(94,44), menu(text, labelProperties), Position.create(0,0), menu, folderName, fragmentObject.get("name").toString(), null, "menu", text2, al));
                 break;
             default:
                 docCompact(text,textBox);
@@ -400,6 +404,53 @@ public class DynamicComponentService {
         audio.addComponent(audioPanel);
         DynamicBox tmpDyn = new DynamicBox(Size.create(94,44), audio, Position.create(0,0), menu, folderName, dynName, null, "audio", text, al);
         return tmpDyn;
+    }
+
+    public VBox menu(String text, LabelProperties labelProperties){
+            //Size.create(94,44)
+        VBox ret = vbox().withSize(94,44).withDecorations(box()).build();
+        List<MenuTemplateEntry> mte = parseMenuEntries(text);
+        TextBoxBuilder left = textBox(46);
+        TextBoxBuilder right = textBox(46);
+        for (MenuTemplateEntry entry: mte) {
+            left.addHeader(middleText(entry.getDishName()),false);
+            right.addHeader(" " +entry.getPrice()+ " " +labelProperties.getCaps(),false);
+        }
+        HBox hBox = hbox().withSize(92,42).withPosition(0,0).build();
+        hBox.addComponent(left);
+        hBox.addComponent(right);
+        ret.addComponent(hBox);
+        return ret;
+    }
+
+    private String middleText(String text){
+        if (text.length() >= 46) {
+            return text;
+        }
+        StringBuilder sb = new StringBuilder();
+        while (sb.length() < 45 - text.length()) {
+            sb.append(' ');
+        }
+        sb.append(text);
+        return sb.toString();
+    }
+
+    private List<MenuTemplateEntry> parseMenuEntries (String text){
+        List<MenuTemplateEntry> mte = new ArrayList<>();
+        int i= 0;
+        String tmp ;
+        do {
+            if (text.substring(0, 1).equals(" ")){
+                text=text.substring(1);
+            }
+            tmp= text.substring(0,text.indexOf("%"));
+            text = text.substring(text.indexOf("%")+1);
+            if(text.length()>0) {
+                mte.add(MenuTemplateEntry.builder().dishName(tmp).price(text.substring(0, text.indexOf("%"))).order(i++).build());
+                text = text.substring(text.indexOf("%") + 1);
+            }
+        } while (text.length()>0);
+        return mte;
     }
 
     private String parseDuration(double duration){

@@ -240,7 +240,7 @@ public class HackingLogic {
         List<String> dict = new ArrayList<>();
         String tmpLine ="";
         try {
-            String dictFileName = "dict\\"+language+"\\"+passwordLength+".txt";
+            String dictFileName = "dict/"+language+"/"+passwordLength+".txt";
             bufferedReader =  new BufferedReader(new InputStreamReader(new FileInputStream(dictFileName),"UTF8"));
             tmpLine=bufferedReader.readLine();
             while(tmpLine!= null) {
