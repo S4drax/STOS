@@ -8,35 +8,35 @@ public class SoundBase {
 
     Runnable soundHonk = new Runnable(){
         public void run(){
-            soundPlayer.playSound("sounds/hev_logon.wav");
+            soundPlayer.playSound(System.getProperty("user.dir")+"/sounds/hev_logon.wav");
         }
     };
 
     Runnable hum = new Runnable(){
         public void run(){
-            soundPlayer.playSound("sounds/hum.wav");
+            soundPlayer.playSound(System.getProperty("user.dir")+"/sounds/hum.wav");
         }
     };
 
     Runnable sLaunch = new Runnable(){
         public void run(){
-            soundPlayer.playSound("sounds/login.wav");
+            soundPlayer.playSound(System.getProperty("user.dir")+"/sounds/login.wav");
         }
     };
 
     Runnable sCorrect = new Runnable(){
         public void run(){
-            soundPlayer.playSound("sounds/correct.wav");
+            soundPlayer.playSound(System.getProperty("user.dir")+"/sounds/correct.wav");
         }
     };
     Runnable sIncorrect = new Runnable(){
         public void run(){
-            soundPlayer.playSound("sounds/incorrect.wav");
+            soundPlayer.playSound(System.getProperty("user.dir")+"/sounds/incorrect.wav");
         }
     };
     Runnable sLocked = new Runnable(){
         public void run(){
-            soundPlayer.playSound("sounds/locked.wav");
+            soundPlayer.playSound(System.getProperty("user.dir")+"/sounds/locked.wav");
         }
     };
 }

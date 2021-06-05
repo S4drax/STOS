@@ -56,7 +56,9 @@ public class Main {
         ScheduledExecutorService soundExecutor = Executors.newScheduledThreadPool(1);
         ScheduledExecutorService backGround = Executors.newScheduledThreadPool(1);
         backGround.scheduleAtFixedRate(soundBase.getHum(), 0, 1, TimeUnit.SECONDS);
-        TilesetResource tilesetResource = CP437TilesetResources.loadTilesetFromFilesystem(20, 20, "rex_paint_20x20_pl.png");
+        String tilesetPath = System.getProperty("user.dir")+"/rex_paint_20x20_pl.png";
+        System.out.println(tilesetPath);
+        TilesetResource tilesetResource = CP437TilesetResources.loadTilesetFromFilesystem(20, 20, tilesetPath);
         TileGrid tileGrid = SwingApplications.startTileGrid(
                 AppConfig.newBuilder()
                         .withSize(Size.create(96, 54))

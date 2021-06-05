@@ -100,7 +100,7 @@ public class Save {
             folders.add(foldUp);
         }
         //Write JSON file
-        try (Writer file = new OutputStreamWriter(new FileOutputStream("directory.json"), StandardCharsets.UTF_8)) {
+        try (Writer file = new OutputStreamWriter(new FileOutputStream(System.getProperty("user.dir")+"/directory.json"), StandardCharsets.UTF_8)) {
             //We can write any JSONArray or JSONObject instance to the file
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             JsonParser jp = new JsonParser();

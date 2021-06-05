@@ -40,6 +40,7 @@ public class DynamicComponentService {
 
     private Map<String,Folder> readFile (String fileName, Map<String, MenuElement> menuElementMap, LabelProperties labelProperties) {
         JSONParser jsonParser = new JSONParser();
+        System.out.println(fileName);
         Map<String,Folder> folderMap = new HashMap<>();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(fileName),"UTF-8"))){
             Object obj = jsonParser.parse(reader);
