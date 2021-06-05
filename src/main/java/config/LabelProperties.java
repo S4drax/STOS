@@ -55,7 +55,8 @@ public class LabelProperties {
     public void loadProperties(String language){
         try {
             Properties prop = new Properties();
-            String propFileName = "dict/"+language+"/labels.properties";
+            String propFileName = System.getProperty("user.dir")+"/dict/"+language+"/labels.properties";
+            System.out.println(propFileName);
             bufferedReader =  new BufferedReader(new InputStreamReader(new FileInputStream(propFileName),"UTF8"));
             prop.load(bufferedReader);
             //TUTAJ PRZYPISYWAC PROPERTASY

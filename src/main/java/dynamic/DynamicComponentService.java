@@ -35,7 +35,7 @@ public class DynamicComponentService {
     private int menu = 1;
     private TranslatorService translatorService = new TranslatorService();
     public Map<String, Folder> initialise(Map<String, MenuElement> menuElementMap, LabelProperties labelProperties){
-        return readFile("directory.json", menuElementMap, labelProperties);
+        return readFile(System.getProperty("user.dir")+"/directory.json", menuElementMap, labelProperties);
     }
 
     private Map<String,Folder> readFile (String fileName, Map<String, MenuElement> menuElementMap, LabelProperties labelProperties) {

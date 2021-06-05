@@ -30,7 +30,8 @@ public class AppProperties {
     public void loadProperties(){
         try {
             Properties prop = new Properties();
-            String propFileName = "application.properties";
+            String propFileName = System.getProperty("user.dir")+"/application.properties";
+            System.out.println(propFileName);
             bufferedReader =  new BufferedReader(new InputStreamReader(new FileInputStream(propFileName),"UTF8"));
             prop.load(bufferedReader);
             //TUTAJ PRZYPISYWAC PROPERTASY

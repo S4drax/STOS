@@ -13,7 +13,7 @@ public class UserBaseLoader {
     public List<User> loadUsers(){
         JSONParser jsonParser = new JSONParser();
         List<User> userBase = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("users.json"),"UTF-8"))){
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(System.getProperty("user.dir")+"/users.json"),"UTF-8"))){
             Object obj = jsonParser.parse(reader);
             JSONArray users = (JSONArray) obj;
             users.forEach( user -> userBase.add(parseDirectory((JSONObject) user )));
