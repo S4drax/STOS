@@ -8,6 +8,7 @@ import static javax.sound.sampled.AudioSystem.getAudioInputStream;
 
 public class SoundPlayer {
     public void playSound (String clipPath){
+        System.out.println(clipPath);
         try{
             File file = new File(clipPath);
             playClip(file);
@@ -31,9 +32,11 @@ public class SoundPlayer {
             }
         }
         AudioListener listener = new AudioListener();
-        AudioInputStream audioInputStream = getAudioInputStream(clipFile);
+        AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(clipFile);
         try {
-            Clip clip = AudioSystem.getClip();
+            AudioFormat format = audioInputStream.getFormat();
+            DataLine.Info info = new DataLine.Info(Clip.class, format);
+            Clip clip = (Clip)AudioSystem.getLine(info);
             clip.addLineListener(listener);
             clip.open(audioInputStream);
             try {

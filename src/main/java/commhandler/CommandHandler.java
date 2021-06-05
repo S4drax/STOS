@@ -56,8 +56,11 @@ public class CommandHandler {
         switch (currentWindow) {
             case "main":
                 if (event.getCode().equals(KeyCode.ENTER)) {
-                    if (term.getText().contains("\r\n")) {
-                        term.setText(term.getText().replace("\r\n", ""));
+                    if (term.getText().contains("\r")) {
+                        term.setText(term.getText().replace("\r", ""));
+                    }
+                    if (term.getText().contains("\n")) {
+                        term.setText(term.getText().replace("\n", ""));
                     }
                     if (term.getText().equalsIgnoreCase("stos")) {
                         mainText.clear();
@@ -205,17 +208,17 @@ public class CommandHandler {
 
             case "login":
                 if (event.getCode().equals(KeyCode.ENTER)) {
-                    if (login.getText().contains("\r\n")) {
-                        login.setText(login.getText().replace("\r\n", ""));
+                    if (login.getText().contains("\r")) {
+                        login.setText(login.getText().replace("\r", ""));
                     }
-                    if (login.getText().contains("\n\r")) {
-                        login.setText(login.getText().replace("\n\r", ""));
+                    if (login.getText().contains("\n")) {
+                        login.setText(login.getText().replace("\n", ""));
                     }
-                    if (pswd.getText().contains("\r\n")) {
-                        pswd.setText(pswd.getText().replace("\r\n", ""));
+                    if (pswd.getText().contains("\r")) {
+                        pswd.setText(pswd.getText().replace("\r", ""));
                     }
-                    if (pswd.getText().contains("\n\r")) {
-                        pswd.setText(pswd.getText().replace("\n\r", ""));
+                    if (pswd.getText().contains("\n")) {
+                        pswd.setText(pswd.getText().replace("\n", ""));
                     }
                     for(User u:userBase) {
                         if ((login.getText().equals(u.getLogin())) && (pswd.getText().equals(u.getPassword()))) {
@@ -244,8 +247,11 @@ public class CommandHandler {
 
             case "hack":
                 if (event.getCode().equals(KeyCode.ENTER)) {
-                    if (hackTerm.getText().contains("\r\n")) {
-                        hackTerm.setText(hackTerm.getText().replace("\r\n", ""));
+                    if (hackTerm.getText().contains("\r")) {
+                        hackTerm.setText(hackTerm.getText().replace("\r", ""));
+                    }
+                    if (hackTerm.getText().contains("\n")) {
+                        hackTerm.setText(hackTerm.getText().replace("\n", ""));
                     }
                     if (hackTerm.getText().equalsIgnoreCase(password)) {
                         loggedUser=User.builder().accessLevel(5).build();
